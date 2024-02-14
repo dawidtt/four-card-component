@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #4c4e61;
+    font-family: "Poppins", sans-serif;
+}
+#main-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header {
+    text-align: center;
+    color: #4c4e61;
+    margin: 10px;
+}
+#header p {
+    margin: 0 30px 0 30px;
+}
+p {
+    opacity: 60%;
+}
+#header span {
+    font-weight: 200;
+    opacity: 90%;
+    font-size: 1.6rem;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.sub-container {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 11px -4px rgba(66, 68, 90, 1);
+    max-width: 400px;
+    max-height: 240px;
+}
+.sub-container .img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.sub-container p {
+    margin: 10px 0 40px 0;
+}
+#supervisor-container {
+    border-top: 4px solid #45d3d3;
+    margin-top: 80px;
+}
+#team-builder-container {
+    border-top: 4px solid #ea5353;
+}
+#karma-container {
+    border-top: 4px solid #fcaf4a;
+
+}
+#calculator-container {
+    border-top: 4px solid #549ef2;
+
+}
+
+@media (min-width: 800px){
+    #main-container {
+        max-height: 120vh;
+    }
+    #subs-containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #center {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+        flex-grow: 1;
+        margin: 0;
+    }
+    #center .sub-container {
+        max-height: 400px;
+        margin: 20px 0;
+    }
+    #supervisor-container {
+        flex-basis: 33%;
+        margin-top: 20px;
+    }
+    #calculator-container {
+        flex-basis: 33%;
+    }
+}
